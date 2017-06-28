@@ -1,9 +1,10 @@
 language: csharp
 solution: WindowsFormsTest.sln
+before_install:
+	- nuget install NUnit -Version 3.7.1
 install:
-  - nuget restore WindowsFormsTest.sln
-  - nuget install NUnit -Version 3.7.1 -OutputDirectory testrunner
-  - nuget install xunit.runner.console -Version 2.2.0 -OutputDirectory testrunner
+	- nuget restore WindowsFormsTest.sln
+	- nuget install xunit.runner.console -Version 2.2.0 -OutputDirectory testrunner
 script:
-  - xbuild /p:Configuration=Release WindowsFormsTest.sln
-  - mono ./testrunner/xunit.runner.console.2.2.0/tools/xunit.console.exe ./UnitTest/bin/Release/UnitTest.dll
+	- xbuild /p:Configuration=Release WindowsFormsTest.sln
+	- mono ./testrunner/xunit.runner.console.2.2.0/tools/xunit.console.exe ./UnitTest/bin/Release/UnitTest.dll
