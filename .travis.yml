@@ -1,8 +1,7 @@
 language: csharp
 solution: WindowsFormsTest.sln
 install:
+  - sudo apt-get install nunit-console
   - nuget restore WindowsFormsTest.sln
-  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release WindowsFormsTest.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./UnitTest/bin/Release/UnitTest.dll
