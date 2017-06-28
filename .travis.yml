@@ -1,8 +1,5 @@
 language: csharp
 solution: WindowsFormsTest.sln
-install:
-  - nuget restore WindowsFormsTest.sln
-  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release WindowsFormsTest.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./UnitTest/bin/Release/UnitTest.dll
+  - mono ./packages/xunit.runners.*/tools/xunit.console.clr4.exe ./UnitTest/bin/Release/UnitTest.dll
