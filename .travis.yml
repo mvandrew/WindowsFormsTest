@@ -1,7 +1,7 @@
 language: csharp
 solution: WindowsFormsTest.sln
 install:
-  - nuget restore solution-name.sln
+  - nuget restore WindowsFormsTest.sln
   - nuget install NUnit.Runners -Version 3.7.0 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release WindowsFormsTest.sln
