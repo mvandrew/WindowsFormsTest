@@ -8,3 +8,6 @@ branches:
 
 build:
   project: WindowsFormsTest.sln
+
+before_build:
+  - nuget restore
