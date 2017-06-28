@@ -1,0 +1,7 @@
+D:\Projects\Learn\WindowsFormsTest\UnitTest\bin\Debug\UnitTest.dll
+D:\Projects\Learn\WindowsFormsTest\UnitTest\bin\Debug\UnitTest.pdb
+D:\Projects\Learn\WindowsFormsTest\UnitTest\bin\Debug\nunit.framework.dll
+D:\Projects\Learn\WindowsFormsTest\UnitTest\bin\Debug\nunit.framework.xml
+D:\Projects\Learn\WindowsFormsTest\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+D:\Projects\Learn\WindowsFormsTest\UnitTest\obj\Debug\UnitTest.dll
+D:\Projects\Learn\WindowsFormsTest\UnitTest\obj\Debug\UnitTest.pdb
