@@ -1,5 +1,8 @@
 language: csharp
 solution: WindowsFormsTest.sln
-script:
-  - xbuild /p:Configuration=Release WindowsFormsTest.sln
-  - mono ./packages/xunit.runners.*/tools/xunit.console.clr4.exe ./UnitTest/bin/Release/UnitTest.dll
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore WindowsFormsTest.sln
+after_script:
+  - nunit-console UnitTest/bin/Release/UnitTest.dll
