@@ -1,6 +1,7 @@
 language: csharp
 sudo: required
 solution: WindowsFormsTest.sln
+
 before_install:
   - sudo apt-get install nunit-console
 before_script:
