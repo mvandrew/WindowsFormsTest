@@ -2,6 +2,7 @@ language: csharp
 solution: WindowsFormsTest.sln
 install:
   - nuget restore WindowsFormsTest.sln
+  - nuget install NUnit -Version 3.7.1 -OutputDirectory testrunner
   - nuget install xunit.runner.console -Version 2.2.0 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release WindowsFormsTest.sln
